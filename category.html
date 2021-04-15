@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <title>Category</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">Admin Panel</div>
+                <ul>
+                    <li><a class="nav-btn" href="#">
+                            <i class="fas fa-search"></i></a></li>
+                    <li><a class="nav-btn" href="#">
+                            <i class="fas fa-bell"></i>
+                        </a></li>
+                    <li>
+                        <div class="dropdown1">
+                            <span class="dropbtn1 nav-btn"><i class="fas fa-user"></i></span>
+                            <div class="dropdown-content1">
+                                <a href="#">My Profile</a>
+                                <a href="#">Settings</a>
+                                <a href="./login.html">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="./index.html">
+                        <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span></a></li>
+                <li><a href="./user.html">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span class="title">User</span>
+                    </a></li>
+                <li><a href="./brands.html">
+                        <span class="icon"><i class="fa fa-building" aria-hidden="true"></i></i></span>
+                        <span class="title">Brands</span>
+                    </a></li>
+                <li><a href="#" class="active">
+                        <span class="icon"><i class="fa fa-th-list" aria-hidden="true"></i></i></span>
+                        <span class="title">Category</span>
+                    </a></li>
+                <li><a href="./Products.html">
+                        <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></span>
+                        <span class="title">Products</span>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb" style="justify-content: flex-end;">
+                    <li class="breadcrumb-item"><a href="./index.html">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Brands</li>
+                </ol>
+            </nav>
+            <div class="container input-container col-12">
+                <h3>Brands</h3>
+                <form class="boot-form column">
+                    <div class="form-group">
+                        <label for="catagory">Catagory Name</label>
+                        <input type="text" class="form-control" id="catagory">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="container table-container col-12">
+
+                <h3>Table</h3>
+                <div class="export-btn-group row">
+                    <button type="button" class="btn btn-primary export-btn mb-3">Copy</button>
+                    <button type="button" class="btn btn-primary export-btn mb-3">CSV</button>
+                    <button type="button" class="btn btn-primary export-btn mb-3">EXEL</button>
+                    <button type="button" class="btn btn-primary export-btn mb-3">PDF</button>
+                    <button type="button" class="btn btn-primary export-btn mb-3">PRINT</button>
+                    <form class="table-search">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text table-Search-btn">Search</span>
+                          </div>
+                          <input type="text" class="form-control">
+                        </div>
+                      </form>
+                </div>
+                <div class="table-responsive">
+                <table class="table boot-table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Si No</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                            <td></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                            <td></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                            <td></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

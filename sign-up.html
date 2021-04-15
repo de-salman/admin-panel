@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="./assets/loginstyles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Sign Up </h2>
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+            </div>
+
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="username" class="fadeIn second" name="username" placeholder="Username">
+                <input type="email" id="email" class="fadeIn second" name="email" placeholder="Email">
+                <input type="text" id="address" class="fadeIn second" name="address" placeholder="Address">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
+                <div class="form-group fadeIn third">
+                    <select class="sign-up-usertype">
+                        <option>Superuser</option>
+                        <option>Admin</option>
+                        <option>Manager</option>
+                    </select>
+                </div>
+                <input type="submit" class="fadeIn fourth" value="Log In">
+
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="./login.html">Sing In</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top_navbar" >
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">Admin Panel</div>
+                <ul>
+                    <li><a class="nav-btn" href="#">
+                            <i class="fas fa-search"></i></a></li>
+                    <li><a class="nav-btn" href="#">
+                            <i class="fas fa-bell"></i>
+                        </a></li>
+                    <li><div class="dropdown1">
+                        <span class="dropbtn1 nav-btn"><i class="fas fa-user"></i></span>
+                        <div class="dropdown-content1">
+                        <a href="#">My Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="./login.html" >Logout</a>
+                        </div>
+                      </div></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" class="active">
+                        <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span></a></li>
+                <li><a href="./user.html">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span class="title">User</span>
+                    </a></li>
+                <li><a href="./brands.html">
+                        <span class="icon"><i class="fa fa-building" aria-hidden="true"></i></i></span>
+                        <span class="title">Brands</span>
+                    </a></li>
+                <li><a href="./category.html">
+                        <span class="icon"><i class="fa fa-th-list" aria-hidden="true"></i></i></span>
+                        <span class="title">Category</span>
+                    </a></li>
+                <li><a href="./products.html">
+                        <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></span>
+                        <span class="title">Products</span>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb" style="justify-content: flex-end;">
+                    <li class="breadcrumb-item"><a >Dashboard</a></li>
+                </ol>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xl-3">
+                        <div class="card bg-c-blue order-card" onclick="location.href='./user.html';">
+                            <div class="card-block text-center">
+                                <h6 class="m-b-20">User</h6>
+                                <h2><i class="fa fa-user "></i></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3">
+                        <div class="card bg-c-blue order-card" onclick="location.href='./brands.html';">
+                            <div class="card-block text-center">
+                                <h6 class="m-b-20">Brand</h6>
+                                <h2><i class="fa fa-building" aria-hidden="true"></i></i></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3">
+                        <div class="card bg-c-blue order-card" onclick="location.href='./category.html';">
+                            <div class="card-block text-center">
+                                <h6 class="m-b-20">Category</h6>
+                                <h2><i class="fa fa-th-list" aria-hidden="true"></i></i></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3">
+                        <div class="card bg-c-blue order-card" onclick="location.href='./products.html';">
+                            <div class="card-block text-center">
+                                <h6 class="m-b-20">Products</h6>
+                                <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></h2>
+                            </div>
+                        </div>
+                    </div>
+
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>
